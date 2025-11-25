@@ -4,10 +4,9 @@ resource "aws_instance" "terraform" {
     vpc_security_group_ids = [aws_security_group.allow_all.id]
 
     tags = {
-      Name = "Terraform"
+      Name = "terraform"
       Terraform = true
       Description = "practice"
-      Affinity = "yes"
     }
 }
 
@@ -29,6 +28,6 @@ egress {
 }
 
     tags = {
-      Name = "allow-all-sgs"
+      Name = "allow-all"
     }
 }
