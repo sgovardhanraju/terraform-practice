@@ -10,7 +10,7 @@ backend "s3" {
     bucket = "sgr-remote-state"
     key = "remote-state-demo"
     region = "us-east-1"
-    use-lockfile = true
+    use_lockfile = true
     encrypt = true
     }
 }
