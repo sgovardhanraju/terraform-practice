@@ -8,7 +8,7 @@ terraform {
 
 backend "s3" {
     bucket = "sgr-remote-state"
-    key = "locals-demo-1"
+    key = "dynamci-block-demo"
     region = "us-east-1"
     use_lockfile = true
     encrypt = true
