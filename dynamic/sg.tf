@@ -14,7 +14,7 @@ egress {
     content{
   from_port         = ingress.value
   to_port           = ingress.value
-  protocol          = "-1"
+  protocol          = "tcp"
   cidr_blocks       = ["0.0.0.0/0"]
     }
  }
